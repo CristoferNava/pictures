@@ -1,8 +1,10 @@
-import Picture from "./Picture";
+import Picture from "../Picture/Picture.component";
+
+import "./Pictures.styles.css";
 
 const Pictures = ({ picturesList }) => {
   return (
-    <div>
+    <div className="pictures">
       {picturesList.map((picture) => {
         return <Picture key={picture.id} picture={picture} />;
       })}
