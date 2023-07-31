@@ -1,0 +1,24 @@
+.form {
+  margin-bottom: 50px;
+
+  /* FLEXBOX */
+  display: flex;
+  justify-content: center;
+}
+
+.input {
+  margin-right: 8px;
+  padding: 10px;
+  border: 1.3px solid black;
+  border-radius: 5px;
+}
+
+.search-button {
+  border: 1.3px solid black;
+  border-radius: 15px;
+  padding: 4px 30px;
+  background-color: beige;
+  font-size: 15px;
+  font-weight: lighter;
+  cursor: pointer;
+}

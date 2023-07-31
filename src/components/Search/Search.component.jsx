@@ -11,14 +11,15 @@ const Search = ({ search, setSearch, setNSearchs }) => {
   };
 
   return (
-    <form>
+    <form className="form">
       <input
         type="text"
         placeholder="animals"
         value={search}
         onChange={onChangeHandler}
+        className="input"
       />
-      <button type="sumbit" onClick={onClickHandler}>
+      <button type="sumbit" onClick={onClickHandler} className="search-button">
         Search
       </button>
     </form>
