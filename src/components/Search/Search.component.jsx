@@ -5,13 +5,13 @@ const Search = ({ search, setSearch, setNSearchs }) => {
     setSearch(e.target.value);
   };
 
-  const onClickHandler = (e) => {
-    e.preventDefault();
+  const onSubmitHandler = (event) => {
+    event.preventDefault();
     setNSearchs((prev) => prev + 1);
   };
 
   return (
-    <form className="form">
+    <form className="form" onSubmit={onSubmitHandler}>
       <input
         type="text"
         placeholder="animals"
@@ -19,9 +19,7 @@ const Search = ({ search, setSearch, setNSearchs }) => {
         onChange={onChangeHandler}
         className="input"
       />
-      <button type="sumbit" onClick={onClickHandler} className="search-button">
-        Search
-      </button>
+      <button className="search-button">Search</button>
     </form>
   );
 };
